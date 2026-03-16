@@ -29,3 +29,6 @@ Thumbs.db
 *.webm
 *.mp4
 !frontend/public/fallback/*.webm
+
+# Temp scripts
+tmp/
