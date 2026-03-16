@@ -1,0 +1,40 @@
+{
+  "bamboo_snooze": {
+    "label": "Panda-napping...",
+    "prompt": "A funny panda, eyes half-closed, gently rocking. A small bamboo shoot clutched loosely. Content and sleepy.",
+    "color": "#B2DFDB",
+    "pre_generate": true,
+    "tool_triggers": [],
+    "role": "rest"
+  },
+  "bamboo_ponder": {
+    "label": "Puzzling it out...",
+    "prompt": "A funny panda with furrowed brows, tapping its chin with a paw. A bamboo leaf spins above its head, deep in thought.",
+    "color": "#90CAF9",
+    "pre_generate": true,
+    "tool_triggers": [],
+    "role": "processing"
+  },
+  "chatty_chuckle": {
+    "label": "Chatting cheerfully...",
+    "prompt": "A funny panda gesticulating with its paws, mouth open in a wide, happy grin. Expressive eyes sparkling, enthusiastically communicating.",
+    "color": "#FFAB91",
+    "pre_generate": true,
+    "tool_triggers": [],
+    "role": "speaking"
+  },
+  "dancing": {
+    "label": "跳舞中...",
+    "prompt": "Motif is moving rhythmically, swaying and grooving to an imaginary beat, with a joyful expression and fluid movements.",
+    "color": "#FF66CC",
+    "pre_generate": false,
+    "tool_triggers": []
+  },
+  "cheerful_chatting": {
+    "label": "Chatting cheerfully",
+    "prompt": "Motif is happily chatting with a bright and friendly demeanor, moving their hands expressively.",
+    "color": "#7c5cff",
+    "pre_generate": false,
+    "tool_triggers": []
+  }
+}

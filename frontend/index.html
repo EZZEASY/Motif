@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motif</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+  <body>
+    <!-- Home Screen — Character Grid -->
+    <div id="home" style="display:none">
+      <h1 id="home-title">Motif</h1>
+      <p id="home-subtitle">Your AI Companions</p>
+      <div id="character-grid"></div>
+      <button id="create-character-btn">+ Create New Character</button>
+    </div>
+
+    <!-- Full-screen Character Creator Overlay -->
+    <div id="character-creator" style="display:none">
+      <button id="creator-back-btn" class="back-btn" style="display:none">&larr;</button>
+      <h2>Create Your Motif</h2>
+      <p>Describe the character you want</p>
+      <div id="character-input-wrapper">
+        <input
+          type="text"
+          id="character-input"
+          placeholder="e.g. A cute orange cat wearing a small cloak"
+          autocomplete="off"
+        />
+        <button id="generate-character-btn">Generate</button>
+      </div>
+      <div id="character-divider">
+        <span>or</span>
+      </div>
+      <div id="character-upload-wrapper">
+        <label id="character-upload-label" for="character-upload-input">
+          <span id="upload-icon">&#x1F4E4;</span>
+          <span>Upload your own image</span>
+          <span id="upload-hint">PNG, JPG — transparent background recommended</span>
+        </label>
+        <input type="file" id="character-upload-input" accept="image/png,image/jpeg,image/webp" hidden />
+      </div>
+      <div id="character-loading" style="display:none">Generating images...</div>
+      <div id="character-candidates"></div>
+      <label id="theme-sync-toggle" style="display:none">
+        <input type="checkbox" id="theme-sync-checkbox" checked />
+        <span>Sync theme color</span>
+      </label>
+      <button id="confirm-character-btn" style="display:none">Confirm Selection</button>
+    </div>
+
+    <!-- Preparing Screen — shown while waiting for idle animation -->
+    <div id="preparing-screen" style="display:none">
+      <img id="preparing-character" alt="Your character" />
+      <p id="preparing-status">Bringing your character to life...</p>
+      <div id="preparing-progress">0 / 3</div>
+    </div>
+
+    <div id="app" style="display:none">
+      <!-- Left: Animation Area -->
+      <div id="animation-area">
+        <div id="animation-container">
+          <div id="motif-body" class="state-idle">
+            <img id="motif-character" src="" alt="Character" />
+            <div class="motif-orb"></div>
+            <div class="motif-ring"></div>
+            <div class="motif-particles"></div>
+            <video id="motif-video" autoplay loop muted playsinline></video>
+          </div>
+          <div id="state-label">Chilling...</div>
+        </div>
+        <div id="growth-indicator">
+          <span id="growth-count">0</span> animations unlocked
+        </div>
+      </div>
+
+      <!-- Right: Chat Area -->
+      <div id="chat-area">
+        <div id="chat-header">
+          <button id="back-to-home-btn" class="back-btn" title="Back to home">&larr;</button>
+          <h1>Motif</h1>
+          <span id="connection-status" class="disconnected">disconnected</span>
+        </div>
+        <div id="chat-messages"></div>
+        <div id="chat-input-area">
+          <input
+            type="text"
+            id="chat-input"
+            placeholder="Say something to Motif..."
+            autocomplete="off"
+          />
+          <button id="send-btn">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

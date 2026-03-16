@@ -1,0 +1,26 @@
+{
+  "bamboo_snooze": [
+    {
+      "path": "bamboo_snooze/117437840f8d43b5a1d50c484aa2f97f.mp4",
+      "state": "bamboo_snooze"
+    }
+  ],
+  "bamboo_ponder": [
+    {
+      "path": "bamboo_ponder/a01b4cb51584449093c0ab3c4201e23e.mp4",
+      "state": "bamboo_ponder"
+    }
+  ],
+  "chatty_chuckle": [
+    {
+      "path": "chatty_chuckle/e60120613f214c5482db667ac3e704de.mp4",
+      "state": "chatty_chuckle"
+    }
+  ],
+  "dancing": [
+    {
+      "path": "dancing/f8c6dfaeeb244fdc91fea844544d9eb4.mp4",
+      "state": "dancing"
+    }
+  ]
+}
